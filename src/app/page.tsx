@@ -1,6 +1,9 @@
 // src/app/page.tsx
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import FloatingChatbot from '../components/FloatingChatbot';
 
 export default function Home() {
   return (
@@ -11,9 +14,9 @@ export default function Home() {
           Aprende a crear un chatbot inteligente utilizando Google Cloud, Gemini, Next.js y Firebase.
         </p>
         <Image
-          src="/vercel.svg"
+          src="/bot.png"
           alt="Welcome to the Chatbot Workshop"
-          width={400}
+          width={250}
           height={250}
           className="mx-auto mb-6"
         />
@@ -21,6 +24,7 @@ export default function Home() {
           Comenzar
         </Link>
       </div>
+      <FloatingChatbot />
     </div>
   );
 }
