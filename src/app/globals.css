@@ -8,6 +8,24 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.dot-ellipsis::after {
+  display: inline-block;
+  animation: ellipsis 1.25s infinite;
+  content: '…';
+}
+
+@keyframes ellipsis {
+  0% {
+    content: '...';
+  }
+  33% {
+    content: '.  ';
+  }
+  67% {
+    content: '.. ';
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
